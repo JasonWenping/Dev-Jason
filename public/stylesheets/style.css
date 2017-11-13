@@ -1,8 +1,104 @@
 body {
-  padding: 50px;
+  color:#fff;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin:0;
+  padding: 0;
+}
+#header{
+	background: url(/images/dev_bg_img.jpg) fixed;
+	height:786px;
+	width: 100%
+	margin: 0;
+}
+.header{
+	width:1170px;
+	height: 721px;
+	margin: 0 auto;
+}
+#top{
+	padding-top: 18px;
+	padding-bottom: 10px;
+	width: 100%;
+	height: 35px;
+	position: fixed;
+	background: #303030;
+	opacity: 0.7;
+}
+#top h1{
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif ;
+	font-weight: bold;
+	color: #fff;
+	float: left;
+	position: relative;
+	padding-left: 100px;
+}
+#top:after{
+	content: "\0020";
+	clear: both;
+	display: block;
+	height: 0;
 }
 
+
 a {
-  color: #00B7FF;
+	color: #fff;
+	text-decoration: none;
+	font-size:12px;
+	font-weight: bold;
+}
+a:hover{
+	color: #00B7FF;
+}
+ul{
+	float: left;
+	margin-left:550px;
+	position: relative;
+}
+ul li{
+	display: inline;
+	margin-left: 10px;
+}
+.slogen{
+	text-align: center;
+	padding-top: 220px;
+}
+.slogen h2{
+	font-size: 58px;
+	margin: 0;
+}
+.slogen p ,.Box p{
+	color: #B2B2B2;
+}
+.click_in{
+	width: 190px;
+	height: 50px;
+	background: #00B7FF;
+	color: #fff;
+	border-radius: 100px;
+	border-width: 0;
+	font-size: 12px;
+	font-weight: bold;
+	margin-top: 75px;
+}
+button:hover{
+	background: #960;
+}
+.Box{
+	width: 330px;
+	height: 120px;
+	float: left;
+	margin:118px 0px 0 0;
+	padding-right: 60px;
+}
+.shaddow{
+	height: 65px;
+	background: #FFF;
+	opacity: 0.5;
+}
+
+
+/*--------------------------------------------------------------------------*/
+
+#Content_1{
+	color: #000;
 }

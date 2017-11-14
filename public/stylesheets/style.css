@@ -7,7 +7,7 @@ body {
 #header{
 	background: url(/images/dev_bg_img.jpg) fixed;
 	height:786px;
-	width: 100%
+	width: 100%;
 	margin: 0;
 }
 .header{
@@ -98,7 +98,109 @@ button:hover{
 
 
 /*--------------------------------------------------------------------------*/
+section{
+}
 
 #Content_1{
+    margin: 0 auto;
+	width: 1170px;
+	height: 800px;
 	color: #000;
+}
+#Content_1 h3{
+	text-align: center;
+	margin-top: 50px;
+	font-size: 28px;
+}
+
+#Content_1  p {
+	text-align: center;
+	margin:25px auto;
+	width: 700px;
+	color: #666;
+	font-size: 12px;
+}
+.l_point{
+	width: 100%;
+	margin: 40px 0 0 0;
+	position: relative;
+
+}
+
+.l_point ul{
+	list-style-type: none;
+	width: 770px;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+}
+.l_point ul li{
+	display: block;
+	width:7px;
+	height: 7px;
+	background: url(/images/button-icon-green.gif);
+	float: left;
+}
+.l_point ul li:hover{
+	background: url(/images/button-icon.gif);
+}
+.live_box{
+	width: 280px;
+	height: 430px;
+	display: block;
+	float: left;
+	margin-top: 80px;
+}
+.shaddow_icon{
+	width: 270px;
+	height: 200px;
+	display: none;
+	float: left;
+	background: url(/images/search-icon.png) no-repeat center;
+	position: absolute;
+}
+.shaddow_img{
+	width: 270px;
+	height: 200px;
+	display: none;
+	float: left;
+	background: #222;
+	opacity: 0.5;
+	position: absolute;
+}
+
+.live_box img{
+	width: 270px;
+	height: 200px;
+}
+
+.l_title{
+	font-size: 16px;
+	text-align: left;
+	font-weight: bold;
+	width: 260px;
+	color: #000；
+}
+.l_text{
+	text-align: left;
+	width: 260px;
+	color: #666;
+	font-size:12px;
+}
+
+
+.live_box:after ,.l_point:after{
+	content: '\0020';
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+
+
+
+
+/*-----------------------------------------------------------------------------*/
+footer{
+	background: #222;
 }

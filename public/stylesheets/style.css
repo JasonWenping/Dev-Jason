@@ -4,35 +4,6 @@ body {
   margin:0;
   padding: 0;
 }
-#header{
-	background: url(/images/dev_bg_img.jpg) fixed;
-	height:786px;
-	width: 100%;
-	margin: 0;
-}
-.header{
-	width:1170px;
-	height: 721px;
-	margin: 0 auto;
-}
-#top{
-	padding-top: 18px;
-	padding-bottom: 10px;
-	width: 100%;
-	height: 35px;
-	position: fixed;
-	background: #303030;
-	opacity: 0.7;
-	z-index: 1;
-}
-#top h1{
-	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif ;
-	font-weight: bold;
-	color: #fff;
-	float: left;
-	position: relative;
-	padding-left: 100px;
-}
 
 a {
 	color: #fff;
@@ -52,6 +23,47 @@ ul li{
 	display: inline;
 	margin-left: 10px;
 }
+
+section h1{
+	font-size: 36px;
+}
+section p{
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+
+#header{
+	background: url(/images/dev_bg_img2.jpg) no-repeat center;
+	height:786px;
+	width: 100%;
+	margin: 0;
+}
+.header{
+	width:1170px;
+	height: 721px;
+	margin: 0 auto;
+}
+#top{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+	height: 35px;
+	position: fixed;
+	background: #303030;
+	opacity: 0.7;
+	z-index: 1;
+}
+#top h1{
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif ;
+	font-weight: bold;
+	color: #fff;
+	float: left;
+	position: relative;
+	padding-left: 100px;
+}
+
+
 .slogen{
 	text-align: center;
 	padding-top: 220px;
@@ -92,8 +104,6 @@ button:hover{
 
 
 /*--------------------------------------------------------------------------*/
-section{
-}
 
 #Content_1{
     margin: 0 auto;
@@ -101,10 +111,9 @@ section{
 	height: 800px;
 	color: #000;
 }
-#Content_1 h3{
+#Content_1 h1{
 	text-align: center;
 	margin-top: 50px;
-	font-size: 28px;
 }
 
 #Content_1  p {
@@ -138,6 +147,15 @@ section{
 	background: url(/images/button-icon-green.gif);
 }
 
+/*******************************gallery***********************/
+
+#gallery{
+	position: relative;
+	overflow: hidden;
+	width:1170px;
+	height: 480px;
+}
+
 .pannel{
 	display: block;
 	float: left;
@@ -147,6 +165,7 @@ section{
 	overflow: hidden;
 	position: absolute;
 }
+
 .live_box{
 	width: 280.5px;
 	height: 430px;
@@ -200,6 +219,17 @@ section{
 	background: url(/images/location_icon.png) no-repeat;
 	float: left;
 }
+.l_percent{
+	width: 260px;
+	height: 5px;
+	background: #CFCFCF;
+	margin: 5px 0;
+}
+.show_perc{
+	width: 10%;
+	height: 5px;
+	background: #32be60;
+}
 .l_info th{
 	text-align: left;
 }
@@ -243,11 +273,10 @@ section{
 	padding:0px;
 	margin: 0px
 }
-.text_commit h3{
+.text_commit h1{
 	position: relative;
 	top: 150px;
 	left: 750px;
-	font-size: 28px;
 	margin: 0;
 }
 .text_commit p{
@@ -266,7 +295,7 @@ section{
 .content_title{
 	width: 1170px;
 	margin: 0px auto;
-	padding: 120px 0 70px 0;
+	padding: 100px 0 70px 0;
 	text-align: center;
 }
 .s_info{

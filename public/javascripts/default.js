@@ -101,6 +101,70 @@ function moveElement(elementClass,finnal_x,interval){
 }
 */
 
+function getPercent(){
+	if(!document.getElementsByClassName) return false;
+	if(!document.getElementsByTagName) return false;
+
+	var percentArray = new Array();
+	var tag = document.getElementsByClassName('l_info');
+	for(var i=0;i<tag.length;i++){
+		var th = tag[i].getElementsByTagName('th')[0];
+		percentArray[i] = th.innerHTML;
+	}
+	return percentArray;
+}
+
+function showPercent(){
+	if(!document.getElementsByClassName) return false;
+	if(!document.getElementById) return false;
+
+	var percent = getPercent();
+	var p = document.getElementById('Content_1');
+	var line = p.getElementsByClassName('show_perc');
+	for(var i=0;i<line.length;i++){
+		line[i].style.width = percent[i];
+	}
+}
+
+function gallery(){
+	var position = [-1190,0,1190];
+	var frame = document.getElementById('Content_1');
+	var btn = frame.getElementsByTagName('li');
+	var pannel = document.getElementsByClassName('pannel');
+	for(var i=0;i<pannel.length;i++){
+		pannel[i].style.left = position[i]+'px';
+		
+		for(var j = 0;j<btn.length;j++){
+			btn[j].onclick = function(j){
+				return function(){
+				//alert('j');
+				if(j ==0){
+					pannel[0].style.left = '0';
+					pannel[1].style.left = '1190px';
+					pannel[2].style.left = '1190px';
+					//continue;
+				}else if( j ==2){
+					pannel[0].style.left = '-1190px';
+					pannel[1].style.left = '-1190px';
+					pannel[2].style.left = '0px';
+					//continue;
+				}else{
+					pannel[0].style.left = '-1190px';
+					pannel[1].style.left = '0px';
+					pannel[2].style.left = '1190px';
+				}
+				console.log(j);
+				
+			}
+	}(j)
+	
+	}	
+	console.log(i);
+	}
+}
+
 addLoadEvent(navList)
 addLoadEvent(shaddow)
+addLoadEvent(showPercent)
+addLoadEvent(gallery)
 //addLoadEvent(elePositon)

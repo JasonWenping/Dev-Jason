@@ -43,7 +43,7 @@
   </div>
  <section>
   <div id="Content_1">
-  	<h3><%= live_title[0] %></h3>
+  	<h1><%= live_title[0] %></h1>
   	<p><%= live_text %></p>
   	<div class="l_point">
   		<ul>
@@ -53,8 +53,132 @@
   		</ul>
   	</div>
 
-
+ <div id='gallery'>
    <div  id="liveBox" class="pannel">
+  	<div class="live_box">
+  		<div class="live_img">
+  			<div class="shaddow_img"></div>
+  			<div class="shaddow_icon"></div>
+  			<img src="/images/pict_large2.gif" >
+  	    </div>
+  		<span class="l_title"><%= l_title[0] %></span><br>
+  		<span class="l_text"><%= l_text %></span>
+  		<div class="location">
+  			<div class="l_icon"></div>
+  			<h2 class="l_name"><%= l_name[0] %></h2>
+  		</div>
+  		<div class="l_percent">
+  			<div class="show_perc"></div>
+  		</div>
+  		<div class="l_info">
+  			<table>
+  				<tr>
+  					<th><%= funded[0] %></th>
+  					<th><%= pledged[0] %></th>
+  					<th><%= days[0] %></th>
+  				</tr>
+  				<tr>
+  					<td>funded</td>
+  					<td>pledged</td>
+  					<td>days to go</td>
+  				</tr>
+  			</table>
+  		</div>
+  	</div>
+
+  	<div class="live_box">
+  		<div class="live_img">
+  			<div class="shaddow_img"></div>
+  			<div class="shaddow_icon"></div>
+  			<img src="/images/pict_large4.gif" >
+  	    </div>
+  		<span class="l_title"><%= l_title[1] %></span><br>
+  		<span class="l_text"><%= l_text %></span>
+  		<div class="location">
+  			<div class="l_icon"></div>
+  			<h2 class="l_name"><%= l_name[1] %></h2>
+  		</div>
+  		<div class="l_percent">
+  			<div class="show_perc"></div>
+  		</div>
+  		<div class="l_info">
+  			<table>
+  				<tr>
+  					<th><%= funded[1] %></th>
+  					<th><%= pledged[1] %></th>
+  					<th><%= days[1] %></th>
+  				</tr>
+  				<tr>
+  					<td>funded</td>
+  					<td>pledged</td>
+  					<td>days to go</td>
+  				</tr>
+  			</table>
+  		</div>
+  	</div>
+    <div class="live_box">
+  		<div class="live_img">
+  			<div class="shaddow_img"></div>
+  			<div class="shaddow_icon"></div>
+  			<img src="/images/pict_large1.gif" >
+  	    </div>
+  		<span class="l_title"><%= l_title[2] %></span><br>
+  		<span class="l_text"><%= l_text %></span>
+  		<div class="location">
+  			<div class="l_icon"></div>
+  			<h2 class="l_name"><%= l_name[2] %></h2>
+  		</div>
+  		<div class="l_percent">
+  			<div class="show_perc"></div>
+  		</div>
+  		<div class="l_info">
+  			<table>
+  				<tr>
+  					<th><%= funded[2] %></th>
+  					<th><%= pledged[2] %></th>
+  					<th><%= days[2] %></th>
+  				</tr>
+  				<tr>
+  					<td>funded</td>
+  					<td>pledged</td>
+  					<td>days to go</td>
+  				</tr>
+  			</table>
+  		</div>
+  	</div>
+  	<div class="live_box">
+  		<div class="live_img">
+  			<div class="shaddow_img"></div>
+  			<div class="shaddow_icon"></div>
+  			<img src="/images/pict_large3.gif" >
+  	    </div>
+  		<span class="l_title"><%= l_title[3] %></span><br>
+  		<span class="l_text"><%= l_text %></span>
+  		<div class="location">
+  			<div class="l_icon"></div>
+  			<h2 class="l_name"><%= l_name[3] %></h2>
+  		</div>
+  		<div class="l_percent">
+  			<div class="show_perc"></div>
+  		</div>
+  		<div class="l_info">
+  			<table>
+  				<tr>
+  					<th><%= funded[3] %></th>
+  					<th><%= pledged[3] %></th>
+  					<th><%= days[3] %></th>
+  				</tr>
+  				<tr>
+  					<td>funded</td>
+  					<td>pledged</td>
+  					<td>days to go</td>
+  				</tr>
+  			</table>
+  		</div>
+  	</div>
+  </div>
+
+   <div class="pannel">
   	<div class="live_box">
   		<div class="live_img">
   			<div class="shaddow_img"></div>
@@ -67,13 +191,15 @@
   			<div class="l_icon"></div>
   			<h2 class="l_name"><%= l_name[0] %></h2>
   		</div>
-  		<div class="l_percent"></div>
+  		<div class="l_percent">
+  			<div class="show_perc"></div>
+  		</div>
   		<div class="l_info">
   			<table>
   				<tr>
-  					<th><%= funded[0] %></th>
-  					<th><%= pledged[0] %></th>
-  					<th><%= days[0] %></th>
+  					<th><%= funded[4] %></th>
+  					<th><%= pledged[4] %></th>
+  					<th><%= days[4] %></th>
   				</tr>
   				<tr>
   					<td>funded</td>
@@ -96,13 +222,15 @@
   			<div class="l_icon"></div>
   			<h2 class="l_name"><%= l_name[1] %></h2>
   		</div>
-  		<div class="l_percent"></div>
+  		<div class="l_percent">
+  			<div class="show_perc"></div>
+  		</div>
   		<div class="l_info">
   			<table>
   				<tr>
-  					<th><%= funded[1] %></th>
-  					<th><%= pledged[1] %></th>
-  					<th><%= days[1] %></th>
+  					<th><%= funded[5] %></th>
+  					<th><%= pledged[5] %></th>
+  					<th><%= days[5] %></th>
   				</tr>
   				<tr>
   					<td>funded</td>
@@ -124,13 +252,15 @@
   			<div class="l_icon"></div>
   			<h2 class="l_name"><%= l_name[2] %></h2>
   		</div>
-  		<div class="l_percent"></div>
+  		<div class="l_percent">
+  			<div class="show_perc"></div>
+  		</div>
   		<div class="l_info">
   			<table>
   				<tr>
-  					<th><%= funded[2] %></th>
-  					<th><%= pledged[2] %></th>
-  					<th><%= days[2] %></th>
+  					<th><%= funded[6] %></th>
+  					<th><%= pledged[6] %></th>
+  					<th><%= days[6] %></th>
   				</tr>
   				<tr>
   					<td>funded</td>
@@ -152,13 +282,15 @@
   			<div class="l_icon"></div>
   			<h2 class="l_name"><%= l_name[3] %></h2>
   		</div>
-  		<div class="l_percent"></div>
+  		<div class="l_percent">
+  			<div class="show_perc"></div>
+  		</div>
   		<div class="l_info">
   			<table>
   				<tr>
-  					<th><%= funded[3] %></th>
-  					<th><%= pledged[3] %></th>
-  					<th><%= days[3] %></th>
+  					<th><%= funded[6] %></th>
+  					<th><%= pledged[6] %></th>
+  					<th><%= days[6] %></th>
   				</tr>
   				<tr>
   					<td>funded</td>
@@ -170,6 +302,130 @@
   	</div>
   </div>
 
+    <div class="pannel">
+  	<div class="live_box">
+  		<div class="live_img">
+  			<div class="shaddow_img"></div>
+  			<div class="shaddow_icon"></div>
+  			<img src="/images/pict_large4.gif" >
+  	    </div>
+  		<span class="l_title"><%= l_title[0] %></span><br>
+  		<span class="l_text"><%= l_text %></span>
+  		<div class="location">
+  			<div class="l_icon"></div>
+  			<h2 class="l_name"><%= l_name[0] %></h2>
+  		</div>
+  		<div class="l_percent">
+  			<div class="show_perc"></div>
+  		</div>
+  		<div class="l_info">
+  			<table>
+  				<tr>
+  					<th><%= funded[8] %></th>
+  					<th><%= pledged[8] %></th>
+  					<th><%= days[8] %></th>
+  				</tr>
+  				<tr>
+  					<td>funded</td>
+  					<td>pledged</td>
+  					<td>days to go</td>
+  				</tr>
+  			</table>
+  		</div>
+  	</div>
+  	<div class="live_box">
+  		<div class="live_img">
+  			<div class="shaddow_img"></div>
+  			<div class="shaddow_icon"></div>
+  			<img src="/images/pict_large3.gif" >
+  	    </div>
+  		<span class="l_title"><%= l_title[1] %></span><br>
+  		<span class="l_text"><%= l_text %></span>
+  		<div class="location">
+  			<div class="l_icon"></div>
+  			<h2 class="l_name"><%= l_name[1] %></h2>
+  		</div>
+  		<div class="l_percent">
+  			<div class="show_perc"></div>
+  		</div>
+  		<div class="l_info">
+  			<table>
+  				<tr>
+  					<th><%= funded[9] %></th>
+  					<th><%= pledged[9] %></th>
+  					<th><%= days[9] %></th>
+  				</tr>
+  				<tr>
+  					<td>funded</td>
+  					<td>pledged</td>
+  					<td>days to go</td>
+  				</tr>
+  			</table>
+  		</div>
+  	</div>
+    <div class="live_box">
+  		<div class="live_img">
+  			<div class="shaddow_img"></div>
+  			<div class="shaddow_icon"></div>
+  			<img src="/images/pict_large1.gif" >
+  	    </div>
+  		<span class="l_title"><%= l_title[2] %></span><br>
+  		<span class="l_text"><%= l_text %></span>
+  		<div class="location">
+  			<div class="l_icon"></div>
+  			<h2 class="l_name"><%= l_name[2] %></h2>
+  		</div>
+  		<div class="l_percent">
+  			<div class="show_perc"></div>
+  		</div>
+  		<div class="l_info">
+  			<table>
+  				<tr>
+  					<th><%= funded[10] %></th>
+  					<th><%= pledged[10] %></th>
+  					<th><%= days[10] %></th>
+  				</tr>
+  				<tr>
+  					<td>funded</td>
+  					<td>pledged</td>
+  					<td>days to go</td>
+  				</tr>
+  			</table>
+  		</div>
+  	</div>
+  	<div class="live_box">
+  		<div class="live_img">
+  			<div class="shaddow_img"></div>
+  			<div class="shaddow_icon"></div>
+  			<img src="/images/pict_large2.gif" >
+  	    </div>
+  		<span class="l_title"><%= l_title[3] %></span><br>
+  		<span class="l_text"><%= l_text %></span>
+  		<div class="location">
+  			<div class="l_icon"></div>
+  			<h2 class="l_name"><%= l_name[3] %></h2>
+  		</div>
+  		<div class="l_percent">
+  			<div class="show_perc"></div>
+  		</div>
+  		<div class="l_info">
+  			<table>
+  				<tr>
+  					<th><%= funded[11] %></th>
+  					<th><%= pledged[11] %></th>
+  					<th><%= days[11] %></th>
+  				</tr>
+  				<tr>
+  					<td>funded</td>
+  					<td>pledged</td>
+  					<td>days to go</td>
+  				</tr>
+  			</table>
+  		</div>
+  	</div>
+  </div>
+</div>
+
 
 
   	<button type="button" class="c_button">VIEW ALL CAMPAIGNS</button>
@@ -180,7 +436,7 @@
   <div id="Content_2">
   	<div class="shaddow_bg"></div>
   	<div class="text_commit">
-  		<h3><%= live_title[1] %></h3>
+  		<h1><%= live_title[1] %></h1>
   		<p><%= story_text %></p>
   	</div>
   	

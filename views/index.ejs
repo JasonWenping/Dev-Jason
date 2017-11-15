@@ -11,11 +11,11 @@
    			<ul>
    				<li><a href="#header"><%= tag[0] %></a></li>
    				<li><a href="#Content_1"><%= tag[1] %></a></li>
-   				<li><a href="#"><%= tag[2] %></a></li>
-   				<li><a href="#"><%= tag[3] %></a></li>
-   				<li><a href="#"><%= tag[4] %></a></li>
-   				<li><a href="#"><%= tag[5] %></a></li>
-   				<li><a href="#"><%= tag[6] %></a></li>
+   				<li><a href="#Content_2"><%= tag[2] %></a></li>
+   				<li><a href="#content_text"><%= tag[3] %></a></li>
+   				<li><a href="#Content_3"><%= tag[4] %></a></li>
+   				<li><a href="#Content_4"><%= tag[5] %></a></li>
+   				<li><a href="#Content_4"><%= tag[6] %></a></li>
    			</ul>
    	</div>
    	<div class='header'>  	
@@ -43,7 +43,7 @@
   </div>
  <section>
   <div id="Content_1">
-  	<h3><%= live_title %></h3>
+  	<h3><%= live_title[0] %></h3>
   	<p><%= live_text %></p>
   	<div class="l_point">
   		<ul>
@@ -53,7 +53,9 @@
   		</ul>
   	</div>
 
-  	<div class="live_box" id="liveBox">
+
+   <div  id="liveBox" class="pannel">
+  	<div class="live_box">
   		<div class="live_img">
   			<div class="shaddow_img"></div>
   			<div class="shaddow_icon"></div>
@@ -69,9 +71,9 @@
   		<div class="l_info">
   			<table>
   				<tr>
-  					<td>40%</td>
-  					<td>$9,907</td>
-  					<td>21</td>
+  					<th><%= funded[0] %></th>
+  					<th><%= pledged[0] %></th>
+  					<th><%= days[0] %></th>
   				</tr>
   				<tr>
   					<td>funded</td>
@@ -98,9 +100,9 @@
   		<div class="l_info">
   			<table>
   				<tr>
-  					<td>40%</td>
-  					<td>$9,907</td>
-  					<td>21</td>
+  					<th><%= funded[1] %></th>
+  					<th><%= pledged[1] %></th>
+  					<th><%= days[1] %></th>
   				</tr>
   				<tr>
   					<td>funded</td>
@@ -126,9 +128,9 @@
   		<div class="l_info">
   			<table>
   				<tr>
-  					<td>40%</td>
-  					<td>$9,907</td>
-  					<td>21</td>
+  					<th><%= funded[2] %></th>
+  					<th><%= pledged[2] %></th>
+  					<th><%= days[2] %></th>
   				</tr>
   				<tr>
   					<td>funded</td>
@@ -154,9 +156,9 @@
   		<div class="l_info">
   			<table>
   				<tr>
-  					<td>40%</td>
-  					<td>$9,907</td>
-  					<td>21</td>
+  					<th><%= funded[3] %></th>
+  					<th><%= pledged[3] %></th>
+  					<th><%= days[3] %></th>
   				</tr>
   				<tr>
   					<td>funded</td>
@@ -166,6 +168,9 @@
   			</table>
   		</div>
   	</div>
+  </div>
+
+
 
   	<button type="button" class="c_button">VIEW ALL CAMPAIGNS</button>
 
@@ -173,8 +178,98 @@
 
 
   <div id="Content_2">
-  	<h3><%= story_title %></h3>
-  	<p><%= story_text %></p>
+  	<div class="shaddow_bg"></div>
+  	<div class="text_commit">
+  		<h3><%= live_title[1] %></h3>
+  		<p><%= story_text %></p>
+  	</div>
+  	
+  	<div id="content_text">
+  		<div class="content_title">
+  			<h1><%= live_title[2] %></h1>
+  			<p><%= live_text %></p>
+  			<div class="l_point">
+  				<ul>
+  					<li></li>
+  					<li></li>
+  					<li></li>
+  				</ul>
+  			</div> 
+
+  			<div class="s_info">
+  				<img src="/images/s_icon_1.png">
+  				<h3><%= s_title[0] %></h3>
+  				<p><%= s_text %></p>
+  			</div>
+  			<div class="s_info">
+  				<img src="/images/s_icon_2.png">
+  				<h3><%= s_title[1] %></h3>
+  				<p><%= s_text %></p>
+  			</div>
+  			<div class="s_info">
+  				<img src="/images/s_icon_3.png">
+  				<h3><%= s_title[2] %></h3>
+  				<p><%= s_text %></p>
+  			</div>
+  			<div class="s_info">
+  				<img src="/images/s_icon_4.png">
+  				<h3><%= s_title[3] %></h3>
+  				<p><%= s_text %></p>
+  			</div>
+  		</div>
+  	</div>
+  </div>
+
+
+  <div id="Content_3">
+  	<img src="/images/model.png">
+  	<div class='content_text3'>
+  		<h1><%= live_title[3] %></h1>
+  		<p><%= live_text %></p>
+  		<button type="button">VISIT SHOP</button>
+  	</div>
+  	
+  </div>
+
+  <div id='Content_4'> 
+  	<div class="content_text4">
+  		<h1><%= live_title[4] %></h1>
+  		<p><%= live_text %></p>
+  		<div class="l_point">
+  			<ul>  			
+  				<li></li>  			
+  				<li></li>  			
+  				<li></li>  		
+  			</ul>  	
+  		</div>   
+  	</div>
+  	<div class="photo_list">  
+  	<div class="donor">
+  		<img src="/images/dev_phonto1.jpg">
+  		<p><%= prize[0] %></p>
+  		<p><%= names[0] %></p>
+  	</div>
+   	<div class="donor">
+  		<img src="/images/dev_phonto2.jpg">
+  		<p><%= prize[1] %></p>
+  		<p><%= names[1] %></p>
+  	</div>
+  	<div class="donor">
+  		<img src="/images/dev_phonto3.jpg">
+  		<p><%= prize[2] %></p>
+  		<p><%= names[2] %></p>
+  	</div>
+  	<div class="donor">
+  		<img src="/images/dev_phonto4.jpg">
+  		<p><%= prize[3] %></p>
+  		<p><%= names[3] %></p>
+  	</div>
+  	<div class="donor">
+  		<img src="/images/dev_phonto5.jpg">
+  		<p><%= prize[4] %></p>
+  		<p><%= names[4] %></p>
+  	</div>
+  </div>
   </div>
 
 </section>

@@ -77,6 +77,30 @@ function shaddow(){
 	}
 	*/
 }
+function elePositon(){
+	var pannels = document.getElementsByClassName('pannel');
+	pannels[0].style.left = '0';
+	pannels[1].style.left = '-1170px';
+	pannels[2].style.left = '-1170px';
+
+}
+/*
+function moveElement(elementClass,finnal_x,interval){
+	var pannel = document.getElementsByClassName(elementClass);
+	for(var i =0; i<pannel.length;i++){
+		var xpos = parseInt(pannel[i].style.left);
+		if (xpos < finnal_x) {
+			xpos++;
+		}
+		if (xpos > finnal_x) {
+			xpos--;
+		}
+		pannel[i].style.left = xpos + 'px';
+	}
+
+}
+*/
 
 addLoadEvent(navList)
 addLoadEvent(shaddow)
+//addLoadEvent(elePositon)

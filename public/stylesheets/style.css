@@ -23,6 +23,7 @@ body {
 	position: fixed;
 	background: #303030;
 	opacity: 0.7;
+	z-index: 1;
 }
 #top h1{
 	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif ;
@@ -32,13 +33,6 @@ body {
 	position: relative;
 	padding-left: 100px;
 }
-#top:after{
-	content: "\0020";
-	clear: both;
-	display: block;
-	height: 0;
-}
-
 
 a {
 	color: #fff;
@@ -124,32 +118,41 @@ section{
 	width: 100%;
 	margin: 40px 0 0 0;
 	position: relative;
-
+	left: 520px;
 }
 
 .l_point ul{
 	list-style-type: none;
-	width: 770px;
-	margin: 0 auto;
+	width: 100%;
+	margin: 0;
 	display: block;
-	position: relative;
 }
 .l_point ul li{
 	display: block;
 	width:7px;
 	height: 7px;
-	background: url(/images/button-icon-green.gif);
+	background: url(/images/button-icon.gif);
 	float: left;
 }
 .l_point ul li:hover{
-	background: url(/images/button-icon.gif);
+	background: url(/images/button-icon-green.gif);
 }
-.live_box{
-	width: 280px;
-	height: 430px;
+
+.pannel{
 	display: block;
 	float: left;
 	margin-top: 80px;
+	width: 1186px;
+	height: 430px;
+	overflow: hidden;
+	position: absolute;
+}
+.live_box{
+	width: 280.5px;
+	height: 430px;
+	display: block;
+	float: left;
+	margin-left: 16px;
 }
 .shaddow_icon{
 	width: 270px;
@@ -188,19 +191,201 @@ section{
 	font-size:12px;
 }
 
+.l_name{
+	font-size: 14px;
+}
+.l_icon{
+	width: 15px;
+	height: 16px;
+	background: url(/images/location_icon.png) no-repeat;
+	float: left;
+}
+.l_info th{
+	text-align: left;
+}
+.l_info td{
+	width: 85px;
+	font-size: 14px;
+	color: #666;
 
-.live_box:after ,.l_point:after{
-	content: '\0020';
-	display: block;
-	height: 0;
-	clear: both;
+}
+
+.c_button{
+	background: #32BE60;
+	border-radius: 100px;
+	color: #FFFFFF;
+	border-width: 0;
+	width: 240px;
+	height: 50px;
+	font-weight: bold;
+	position: relative;
+	top: 520px;
+	left: 468px;
 }
 
 
 
 
+#Content_2{
+	height: 1180px;
+	width:100%;
+	background: url(/images/story_bg_img.jpg);
+}
 
+.shaddow_bg{
+	background: url(/images/story_bg_line.png) repeat-x;
+	height: 110px;
+	width: 100%;
+}
+.text_commit{
+	height: 480px;
+	background: url(/images/story_bg_line_b.png);
+	padding:0px;
+	margin: 0px
+}
+.text_commit h3{
+	position: relative;
+	top: 150px;
+	left: 750px;
+	font-size: 28px;
+	margin: 0;
+}
+.text_commit p{
+	position: relative;
+	top: 150px;
+	left: 750px;
+	width: 400px;
+}
+#content_text{
+	background: url(/images/story_bg_line.png) repeat-x;
+	height: 590px;
+	width: 100%;
+	color: #000;
+}
+
+.content_title{
+	width: 1170px;
+	margin: 0px auto;
+	padding: 120px 0 70px 0;
+	text-align: center;
+}
+.s_info{
+	display: block;
+	width: 500px;
+	height: 85px;
+	float: left;
+	color: #333;
+	margin: 80px 0 0 50px;
+	text-align: left;
+}
+.s_info img{
+	float: left;
+	margin:0 10px 0 0;
+}
+.s_info h3{
+	margin:10px 0;
+
+}
+.s_info p{
+	font-size: 12px;
+	margin:0;
+	width: 350px;
+	color: #666;
+}
+
+
+#Content_3{
+	height: 587px;
+}
+#Content_3 img{
+	position: relative;
+	float: left;
+	top: -33px;
+	left: 200px;
+}
+.content_text3{
+	margin: 90px 0 18px 0;
+	width: 100%;
+	height: 478px;
+	background: #F3F3F3;
+	color: #000;
+}
+.content_text3 h1{
+	position: relative;
+	top: 138px;
+	left: 350px;
+}
+.content_text3 p{
+	position: relative;
+	top: 138px;
+	left: 350px;
+	width: 400px;
+	float: left;
+	color: #999;
+}
+.content_text3 button{
+	margin-top: 238px;
+	width: 200px;
+	height: 50px;
+	background: #150C31;
+	font-weight: bold;
+	color: #FFF;
+	border-radius: 100px;
+	border-width: 0;
+}
+
+#Content_4{
+	height: 560px;
+	color: #000;
+}
+.content_text4{
+	width: 1170px;
+	margin: 0 auto;
+	color: #000;
+	text-align: center;
+}
+.content_text4 h1{
+	margin-top: 100px;
+}
+.content_text4 p{
+	width: 700px;
+	margin: 0 auto;
+	color: #999;
+}
+.photo_list{
+	width: 1170px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	display: block;
+	height: 220px;
+}
+
+.donor{
+	width: 100px;
+	height: 140px;
+	float: left;
+	margin-left:112px;
+	text-align:center;
+	margin-top: 80px;
+}
+.donor p{
+	line-height: 12px;
+}
 /*-----------------------------------------------------------------------------*/
 footer{
 	background: #222;
+	height: 80px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+
+
+/**********************float clear****************************************/
+#top:after,.live_box:after ,.l_point:after,.pannel:after,#Content_4:after{
+	content: '\0020';
+	display: block;
+	height: 0;
+	clear: both;
 }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+	<p><%= title %></p>
+<div id="Content_1">
+	<div id="gallery">		
+	<div class="pannel">
+   <% for(var i=0;i< 4;i++){%>
+  	<div class="live_box">
+  		<div class="live_img">
+  			<div class="shaddow_img"></div>
+  			<div class="shaddow_icon"></div>
+  			<img src="/images/<%= url[i] %>">
+  	    </div>
+  		<span class="l_title"><%= l_title[i] %></span><br>
+  		<span class="l_text"><%= l_text %></span>
+  		<div class="location">
+  			<div class="l_icon"></div>
+  			<h2 class="l_name"><%= l_name[i] %></h2>
+  		</div>
+  		<div class="l_percent">
+  			<div class="show_perc"></div>
+  		</div>
+  		<div class="l_info">
+  			<table>
+  				<tr>
+  					<th><%= funded[i] %></th>
+  					<th><%= pledged[i] %></th>
+  					<th><%= days[i] %></th>
+  				</tr>
+  				<tr>
+  					<td>funded</td>
+  					<td>pledged</td>
+  					<td>days to go</td>
+  				</tr>
+  			</table>
+  		</div>
+  	</div>
+  	<%}%>
+  </div>
+  </div>
+</div>
+  <script type="text/javascript" src="/javascripts/addLoadEvent.js"></script>
+  <script type="text/javascript" src="/javascripts/default.js"></script>
+</body>
+</html>

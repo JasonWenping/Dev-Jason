@@ -152,7 +152,7 @@ button:hover{
 	position: relative;
 	overflow: hidden;
 	width:1170px;
-	height: 480px;
+	height: 600px;
 }
 
 .pannel{
@@ -248,7 +248,7 @@ button:hover{
 	height: 50px;
 	font-weight: bold;
 	position: relative;
-	top: 40px;
+	top: 518px;
 	left: 468px;
 }
 
@@ -417,8 +417,8 @@ footer{
 }
 
 
-/**********************float clear****************************************/
-#top:after,.live_box:after ,.l_point:after,.pannel:after,#Content_4:after{
+/**********************float clear*******,*********************************/
+#top:after,.live_box:after .pannel:after,.l_point:after,#Content_4:after{
 	content: '\0020';
 	display: block;
 	height: 0;

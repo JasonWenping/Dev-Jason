@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= title %></title>
+	<link href="/stylesheets/style.css" rel="stylesheets">
+</head>
+<body>
+	<p><%= title %></p>
+    <p>Article list</p>
+    <ul>
+        <% items.forEach(function(item){%>
+        <div>
+                <div><%=item.title %></div>
+                <div><%=item.title %></div>
+                <div><%=item.title %></div>
+                <div><%=item.title %></div>
+                <div>add line </div>
+              </div>
+            <% }) %>
+  </ul>
+</body>
+</html>

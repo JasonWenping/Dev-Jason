@@ -54,6 +54,8 @@
   	</div>
 
  <div id='gallery'>
+
+
    <div  id="liveBox" class="pannel">
   	<div class="live_box">
   		<div class="live_img">
@@ -85,7 +87,7 @@
   			</table>
   		</div>
   	</div>
-
+<!--
   	<div class="live_box">
   		<div class="live_img">
   			<div class="shaddow_img"></div>
@@ -177,19 +179,20 @@
   		</div>
   	</div>
   </div>
-
+--></div>
    <div class="pannel">
+   	<% for(var i=0;i< 4;i++){ %>
   	<div class="live_box">
   		<div class="live_img">
   			<div class="shaddow_img"></div>
   			<div class="shaddow_icon"></div>
-  			<img src="/images/pict_large1.gif" >
+  			<img src="/images/<%= url[i] %>" >
   	    </div>
-  		<span class="l_title"><%= l_title[0] %></span><br>
+  		<span class="l_title"><%= l_title[i] %></span><br>
   		<span class="l_text"><%= l_text %></span>
   		<div class="location">
   			<div class="l_icon"></div>
-  			<h2 class="l_name"><%= l_name[0] %></h2>
+  			<h2 class="l_name"><%= l_name[i] %></h2>
   		</div>
   		<div class="l_percent">
   			<div class="show_perc"></div>
@@ -197,9 +200,9 @@
   		<div class="l_info">
   			<table>
   				<tr>
-  					<th><%= funded[4] %></th>
-  					<th><%= pledged[4] %></th>
-  					<th><%= days[4] %></th>
+  					<th><%= funded[i] %></th>
+  					<th><%= pledged[i] %></th>
+  					<th><%= days[i] %></th>
   				</tr>
   				<tr>
   					<td>funded</td>
@@ -209,7 +212,8 @@
   			</table>
   		</div>
   	</div>
-
+  	<%}%>
+<!--
   	<div class="live_box">
   		<div class="live_img">
   			<div class="shaddow_img"></div>
@@ -300,6 +304,7 @@
   			</table>
   		</div>
   	</div>
+  
   </div>
 
     <div class="pannel">
@@ -333,6 +338,7 @@
   			</table>
   		</div>
   	</div>
+  
   	<div class="live_box">
   		<div class="live_img">
   			<div class="shaddow_img"></div>
@@ -424,13 +430,14 @@
   		</div>
   	</div>
   </div>
+-->
 </div>
 
 
 
   	<button type="button" class="c_button">VIEW ALL CAMPAIGNS</button>
-
-  </div>
+</div>
+</div>
 
 
   <div id="Content_2">
